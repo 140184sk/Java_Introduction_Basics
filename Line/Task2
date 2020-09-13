@@ -1,0 +1,22 @@
+package by.introduction.level1.line;
+//Вычислить значение выражения по формуле (все переменные принимают действительные значения):
+
+public class Task2 {
+	public static void main(String[] args) {
+		double b = 8;
+		double a = 12;
+		double c = 4;
+		double d;
+		double e;
+		double f;
+		double z;
+
+		d = (b + Math.sqrt(Math.pow(b, 2) + 4 * a * c)) / 2 / a;
+		e = Math.pow(a, 3) * c;
+		f = Math.pow(b, -2);
+
+		z = d - e + f;
+
+		System.out.println("Значение выражения равно - " + z);
+	}
+}
