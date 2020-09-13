@@ -1,0 +1,19 @@
+package by.introduction.level1.line;
+
+// Дано натуральное число Т, которое представляет длительность прошедшего времени в секундах. Вывести
+
+// данное значение длительности в часах, минутах и секундах в следующей форме: ННч ММмин SSc
+
+public class Task5 {
+
+	public static void main(String[] args) {
+		long T = 235612254;
+		int H = (int) T / 3600;
+		short M = (short) ((T - H * 3600) / 60);
+		short S = (short) (T - H * 3600 - M * 60);
+		System.out.println("Дано натуральное число - " + T + "с;");
+		System.out.println("Полученное число - " + H + "ч " + M + "мин " + S + "с;");
+
+	}
+
+}
