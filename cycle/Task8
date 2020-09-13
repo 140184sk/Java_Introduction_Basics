@@ -1,0 +1,34 @@
+package by.introduction.level1.cycle;
+
+//. Даны два числа. Определить цифры, входящие в запись как первого так и второго числа.
+
+public class Task8 {
+	public static void main(String[] args) {
+		
+    Integer b = 124;
+		Integer a = 54097298;
+		String str = a.toString();
+		String str1 = b.toString();
+
+		if (a >= b) {
+			for (int i = 0; i < str.length(); i++) {
+				for (int j = 0; j < str1.length(); j++) {
+					if (str.charAt(i) == str1.charAt(j)) {
+						System.out.println("Цифра " + str.charAt(i) + " входит в запись обоих чисел");
+					}
+				}
+			}
+		}
+    
+    else {
+			for (int i = 0; i < str1.length(); i++) {
+				for (int j = 0; j < str.length(); j++) {
+					if (str.charAt(j) == str1.charAt(i)) {
+						System.out.println("Цифра " + str.charAt(j) + " входит в запись обоих чисел");
+					}
+				}
+			}
+		}
+
+	}
+}
