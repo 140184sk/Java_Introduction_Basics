@@ -1,0 +1,22 @@
+package by.introduction.level1.line;
+
+//Дано действительное число R вида nnn.ddd (три цифровых разряда в дробной и целой частях). Поменять местами
+//дробную и целую части числа и вывести полученное значение числа.
+
+public class Task4 {
+
+	public static void main(String[] args) {
+		double a = 561.254;
+		double b;
+		double c;
+		double z;
+
+		b = (a * 1000) % 1000;
+		c = (int) a / 1000.0;
+		z = b + c;
+		System.out.println("Исходное значение числа - " + a);
+		System.out.println("Полученное значение числа - " + z);
+
+	}
+
+}
