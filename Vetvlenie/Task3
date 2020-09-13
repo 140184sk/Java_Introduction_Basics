@@ -1,0 +1,39 @@
+package by.introduction.level1.vetvlenie;
+
+import java.util.Scanner;
+
+//Даны три точки А(х1,у1), В(х2,у2) и С(х3,у3). Определить, будут ли они расположены на одной прямой.
+public class Task3 {
+
+	public static void main(String[] args) {
+
+		@SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
+		int x1;
+		int x2;
+		int x3;
+		int y1;
+		int y2;
+		int y3;
+
+		System.out.print("Координата x1 точки A:");
+		x1 = sc.nextInt();
+		System.out.print("Координата y1 точки A:");
+		y1 = sc.nextInt();
+		System.out.print("Координата x2 точки B:");
+		x2 = sc.nextInt();
+		System.out.print("Координата y2 точки B:");
+		y2 = sc.nextInt();
+		System.out.print("Координата x3 точки С:");
+		x3 = sc.nextInt();
+		System.out.print("Координата y3 точки С:");
+		y3 = sc.nextInt();
+
+		if ((x1 - x2) * (y3 - y2) == (x3 - x2) * (y1 - y2)) {
+			System.out.println("Точки A, B и C расположены на одной прямой");
+		} else {
+			System.out.println("Точки A, B и C не расположены на одной прямой");
+		}
+	}
+
+}
