@@ -1,0 +1,30 @@
+package by.introduction.level1.vetvlenie;
+
+import java.util.Scanner;
+
+//Вычислить значение функции:
+
+public class Task5 {
+	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
+		
+    double x;
+		double y;
+		
+    System.out.print(">> ");
+		while (!sc.hasNextDouble()) {
+			sc.nextLine();
+			System.out.print(">> ");
+		}
+		x = sc.nextDouble();
+		System.out.println("Значение аргумента функции x равно: " + x);
+		
+    if (x <= 3) {
+			y = Math.pow(x, 2) - 3 * x + 9;
+		} else {
+			y = 1 / (Math.pow(x, 3) + 6);
+		}
+		System.out.println("Значение функции y равно: " + y);
+	}
+}
