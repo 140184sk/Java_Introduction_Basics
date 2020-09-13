@@ -1,0 +1,24 @@
+package by.introduction.level1.cycle;
+
+import java.util.Scanner;
+
+//Напишите программу, где пользователь вводит любое целое положительное число. А программа суммирует
+//все числа от 1 до введенного пользователем числа.
+
+public class Task1 {
+	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
+		
+    int n;
+		int sum = 0;
+		
+    System.out.print("Ведите целое положительное число >>");
+
+		n = sc.nextInt();
+		for (int i = 1; i <= n; i++) {
+			sum += i;
+		}
+		System.out.println("Сумма всех чисел от 1 до " + n + " равна: " + sum);
+	}
+}
